@@ -1,0 +1,5 @@
+Flask
+faiss-cpu
+numpy
+sentence-transformers
+scikit-learn

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Legal Aid Nebraska</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top-bar">
+    <div class="logo" aria-label="Legal Aid Nebraska">
+        <span class="logo-mark">△</span>
+        <span class="logo-text">LegalAid<small>NEBRASKA</small></span>
+    </div>
+</header>
+
+<main class="results-page">
+    <button id="backButton" class="back-button" type="button">← Back to search</button>
+
+    <div class="results-header">
+        <div>
+            <h1 id="resultsTitle">Results</h1>
+            <p id="resultsLocation"></p>
+        </div>
+
+        <div class="result-actions">
+            <button id="selectAllButton" class="secondary-button" type="button">Select All</button>
+            <button id="clearButton" class="secondary-button clear-button" type="button">Clear Selection</button>
+            <button id="copySelectionButton" class="primary-small-button" type="button">Copy Selection</button>
+        </div>
+    </div>
+
+    <section id="resultsList" class="results-list"></section>
+
+    <div id="noResults" class="no-results hidden">
+        No resources matched your search.
+    </div>
+
+    <section class="email-section">
+        <div class="email-heading">
+            <h2>Client Email Template</h2>
+            <button id="copyEmailButton" class="primary-small-button" type="button">Copy</button>
+        </div>
+        <div id="emailTemplate" class="email-template"></div>
+    </section>
+</main>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

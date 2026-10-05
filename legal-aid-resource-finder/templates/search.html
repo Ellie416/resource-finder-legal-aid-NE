@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Aid Nebraska</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top-bar">
+    <div class="logo" aria-label="Legal Aid Nebraska">
+        <span class="logo-mark">△</span>
+        <span class="logo-text">LegalAid<small>NEBRASKA</small></span>
+    </div>
+</header>
+
+<main class="search-page">
+    <section class="search-container">
+        <h1>My client needs...</h1>
+
+        <div class="need-input-wrapper">
+            <input id="clientNeed" type="text" placeholder="Housing help" autocomplete="off">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+        </div>
+
+        <div class="location-controls">
+            <div class="filter-row">
+                <button id="locationToggle" class="toggle" type="button" aria-pressed="false">
+                    <span class="toggle-knob"></span>
+                </button>
+                <span>Filter Location</span>
+            </div>
+
+            <div id="locationOptions" class="location-options hidden">
+                <label><input type="radio" name="locationType" value="region"> <span>Region</span></label>
+                <label><input type="radio" name="locationType" value="county"> <span>County</span></label>
+                <label><input type="radio" name="locationType" value="city"> <span>City</span></label>
+            </div>
+
+            <div id="locationDropdownWrapper" class="location-dropdown hidden">
+                <input id="locationSearch" type="text" placeholder="Select a location..." autocomplete="off">
+                <div id="locationDropdown" class="dropdown-menu"></div>
+            </div>
+        </div>
+
+        <button id="searchButton" class="primary-button" type="button">Search</button>
+        <div id="searchError" class="error-message hidden"></div>
+    </section>
+</main>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
