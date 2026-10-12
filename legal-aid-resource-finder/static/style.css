@@ -372,3 +372,32 @@ body {
         width: 100%;
     }
 }
+
+
+.selected-locations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.location-chip {
+    border: 0;
+    border-radius: 14px;
+    background: #dec8cb;
+    padding: 5px 9px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.multi-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.multi-option input {
+    margin: 0;
+}
+

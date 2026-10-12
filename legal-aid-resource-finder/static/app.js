@@ -1,6 +1,8 @@
 let locationsData = null;
 let searchResults = [];
 let selectedResults = new Set();
+let selectedLocations = new Set();
+let currentLocationType = null;
 
 function $(id) {
     return document.getElementById(id);
@@ -89,8 +91,6 @@ function getLocationValues(type) {
     if (!locationsData) return [];
 
     // The API uses the exact keys "regions", "counties", and "cities".
-    // We cannot construct these keys by simply adding "s" because
-    // "county" would become "countys" and "city" would become "citys".
     const keyByType = {
         region: "regions",
         county: "counties",
@@ -107,9 +107,12 @@ function populateLocationDropdown(type) {
     const dropdown = $("locationDropdown");
     const values = getLocationValues(type);
 
+    currentLocationType = type;
+    selectedLocations.clear();
+
     show(wrapper);
     input.value = "";
-    delete input.dataset.value;
+    renderSelectedLocations();
 
     function render(filter = "") {
         const normalized = filter.toLowerCase().trim();
@@ -128,25 +131,65 @@ function populateLocationDropdown(type) {
         }
 
         matches.forEach(value => {
-            const option = document.createElement("div");
-            option.className = "dropdown-option";
-            option.textContent = value;
+            const label = document.createElement("label");
+            label.className = "dropdown-option multi-option";
 
-            option.addEventListener("click", () => {
-                input.value = value;
-                input.dataset.value = value;
-                dropdown.innerHTML = "";
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.checked = selectedLocations.has(value);
+
+            checkbox.addEventListener("change", () => {
+                if (checkbox.checked) {
+                    selectedLocations.add(value);
+                } else {
+                    selectedLocations.delete(value);
+                }
+
+                renderSelectedLocations();
             });
 
-            dropdown.appendChild(option);
+            const text = document.createElement("span");
+            text.textContent = value;
+
+            label.append(checkbox, text);
+            dropdown.appendChild(label);
         });
     }
 
     input.oninput = () => render(input.value);
     input.onfocus = () => render(input.value);
     render();
-    input.focus();
 }
+
+
+function renderSelectedLocations() {
+    const container = $("selectedLocations");
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    selectedLocations.forEach(value => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "location-chip";
+        chip.textContent = `${value} ×`;
+        chip.title = `Remove ${value}`;
+
+        chip.addEventListener("click", () => {
+            selectedLocations.delete(value);
+            renderSelectedLocations();
+
+            if (currentLocationType) {
+                $("locationSearch").dispatchEvent(
+                    new Event("input")
+                );
+            }
+        });
+
+        container.appendChild(chip);
+    });
+}
+
 
 function setupSearchButton() {
     $("searchButton").addEventListener("click", performSearch);
@@ -182,11 +225,11 @@ async function performSearch() {
         }
 
         locationType = selectedType.value;
-        locationValue = $("locationSearch").dataset.value ||
-                        $("locationSearch").value.trim();
+        locationValue = Array.from(selectedLocations);
 
-        if (!locationValue) {
-            error.textContent = "Please select a location from the list.";
+        if (!locationValue.length) {
+            error.textContent =
+                "Please select at least one location from the list.";
             show(error);
             return;
         }
@@ -203,7 +246,7 @@ async function performSearch() {
             body: JSON.stringify({
                 query,
                 location_type: locationType,
-                location_value: locationValue
+                location_values: locationValue
             })
         });
 
@@ -253,9 +296,23 @@ function initializeResultsPage() {
 function renderResults(query, locationType, locationValue) {
     $("resultsTitle").textContent = `Results for "${query}"`;
 
-    if (locationType && locationValue) {
-        const label = locationType.charAt(0).toUpperCase() + locationType.slice(1);
-        $("resultsLocation").textContent = `in ${locationValue} (${label}):`;
+    if (
+        locationType &&
+        locationValue &&
+        (Array.isArray(locationValue)
+            ? locationValue.length
+            : true)
+    ) {
+        const label =
+            locationType.charAt(0).toUpperCase() +
+            locationType.slice(1);
+
+        const values = Array.isArray(locationValue)
+            ? locationValue.join(", ")
+            : locationValue;
+
+        $("resultsLocation").textContent =
+            `in ${values} (${label}):`;
     } else {
         $("resultsLocation").textContent = "in Nebraska:";
     }
@@ -426,14 +483,11 @@ function updateEmailTemplate() {
 
     const template = `Dear :
 
-Thank you for calling Legal Aid of Nebraska. An attorney has reviewed your request for assistance. Legal Aid does not have enough staff to help everyone who needs a lawyer. Unfortunately, we are not able to help you at this time. However, the attorney has advised you. [See advice].
-
-You have let us know that you and your family might need help finding some other types of resources. The following describes resources that may be available from different agencies in Nebraska.
-
+You have let us know that you and your family might need help finding some other types of resources.  The following describes resources that may be available from different agencies in Nebraska. Please feel free to contact these resources as described below.
+ 
 ${organizationText}
 
-If you are unhappy with our assistance, you may file a complaint. Our Client Grievance Procedure is located on our website or by calling 1-888-991-9921.
-Thank you for your attention to this matter.`;
+Sincerely,`;
 
     $("emailTemplate").textContent = template;
 }

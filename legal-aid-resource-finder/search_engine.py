@@ -106,50 +106,35 @@ class SearchEngine:
     # LOCATION FILTER
     # ======================================================
 
-    def filter_by_location(
-        self,
-        location_type,
-        location_value
-    ):
+    
+    def filter_by_location(self, location_type, location_value):
         """
-        Return the indexes of resources that can
-        serve the selected location.
-
-        Example:
-
-            location_type = "city"
-            location_value = "Lincoln"
-
-        returns indexes of resources that serve:
-
-            - Lincoln
-            - Lancaster County
-            - Southeast Nebraska
-            - Nebraska statewide
+        Return resource indexes matching ANY selected location.
+        A resource is only included once, even if it matches
+        multiple selected locations.
         """
+        if isinstance(location_value, str):
+            location_values = [location_value]
+        else:
+            location_values = list(location_value or [])
 
         eligible_indices = []
 
-        for index, resource in enumerate(
-            self.metadata
-        ):
-
-            matches = (
-                self.location_db
-                .resource_matches_location(
+        for index, resource in enumerate(self.metadata):
+            matches = any(
+                self.location_db.resource_matches_location(
                     resource,
                     location_type,
-                    location_value
+                    value
                 )
+                for value in location_values
             )
 
             if matches:
-
-                eligible_indices.append(
-                    index
-                )
+                eligible_indices.append(index)
 
         return eligible_indices
+
 
     # ======================================================
     # SCORE NORMALIZATION

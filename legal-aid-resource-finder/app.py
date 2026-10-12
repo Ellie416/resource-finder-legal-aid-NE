@@ -61,7 +61,27 @@ def search():
 
     query = (data.get("query") or "").strip()
     location_type = data.get("location_type")
-    location_value = (data.get("location_value") or "").strip()
+    location_values = data.get( 
+        "location_values",
+        data.get("location_value", [])
+    )
+
+    if isinstance(location_values, str):
+        location_values = (
+            [location_values.strip()]
+            if location_values.strip()
+            else []
+        )
+
+    if not isinstance(location_values, list):
+        return jsonify({"error": "Locations must be a list."}), 400
+
+    location_values = [
+        value.strip()
+        for value in location_values
+        if isinstance(value, str) and value.strip()
+    ]
+
 
     if not query:
         return jsonify({"error": "Please enter what the client needs."}), 400
@@ -85,17 +105,26 @@ def search():
                 for city in county.get("municipalities", [])
             }
 
-        if location_value not in valid_values:
-            return jsonify({"error": "Please select a valid Nebraska location."}), 400
+        invalid_values = [
+            value for value in location_values
+            if value not in valid_values
+        ]
 
+        if invalid_values:
+            return jsonify({
+                "error": "Invalid Nebraska location(s): "
+                + ", ".join(invalid_values)
+            }), 400
+
+        
     if location_type in {"", None}:
         location_type = None
-        location_value = None
+        location_values = []
 
     results = engine.search(
         query=query,
         location_type=location_type,
-        location_value=location_value,
+        location_value=location_values if location_values else None,
         top_k=10
     )
 
@@ -116,7 +145,7 @@ def search():
     return jsonify({
         "query": query,
         "location_type": location_type,
-        "location_value": location_value,
+        "location_value": location_values,
         "results": cleaned_results
     })
 
