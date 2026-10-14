@@ -19,8 +19,11 @@
 
         <div class="need-input-wrapper">
             <input id="clientNeed" type="text" placeholder="Housing help" autocomplete="off">
-            <span class="search-icon" aria-hidden="true">⌕</span>
         </div>
+        <label id="searchAllWrapper" class="search-all-checkbox hidden">
+            <input type="checkbox" id="searchAllResources">
+            <span>Search all resources for selected location</span>
+        </label>
 
         <div class="location-controls">
             <div class="filter-row">
@@ -30,21 +33,24 @@
                 <span>Filter Location</span>
             </div>
 
-            <div id="locationOptions" class="location-options hidden">
-                <label><input type="radio" name="locationType" value="region"> <span>Region</span></label>
-                <label><input type="radio" name="locationType" value="county"> <span>County</span></label>
-                <label><input type="radio" name="locationType" value="city"> <span>City</span></label>
-            </div>
+            <!-- NEW CONTAINER: Groups radios and dropdown side-by-side -->
+            <div class="location-selection-area">
+                <div id="locationOptions" class="location-options hidden">
+                    <label><input type="radio" name="locationType" value="region"> <span>Region</span></label>
+                    <label><input type="radio" name="locationType" value="county"> <span>County</span></label>
+                    <label><input type="radio" name="locationType" value="city"> <span>City</span></label>
+                </div>
 
-            <div id="locationDropdownWrapper" class="location-dropdown hidden">
-                <input
-                    id="locationSearch"
-                    type="text"
-                    placeholder="Search and select locations..."
-                    autocomplete="off"
-                >
-                <div id="selectedLocations" class="selected-locations"></div>
-                <div id="locationDropdown" class="dropdown-menu"></div>
+                <div id="locationDropdownWrapper" class="location-dropdown hidden">
+                    <input
+                        id="locationSearch"
+                        type="text"
+                        placeholder="Select locations..."
+                        autocomplete="off"
+                    >
+                    <div id="selectedLocations" class="selected-locations"></div>
+                    <div id="locationDropdown" class="dropdown-menu"></div>
+                </div>
             </div>
         </div>
 

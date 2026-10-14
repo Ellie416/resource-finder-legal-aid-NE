@@ -77,14 +77,6 @@ body {
     font-size: 13px;
 }
 
-.search-icon {
-    position: absolute;
-    right: -84px;
-    top: 5px;
-    color: #f3e8e8;
-    font-size: 22px;
-}
-
 .location-controls {
     width: 350px;
     margin: 16px auto 0;
@@ -401,26 +393,6 @@ body {
 }
 
 
-/* Keep the location selector within the page layout */
-.location-dropdown {
-    position: relative;
-    width: 100%;
-    min-width: 0;
-}
-
-/* Keep the list compact and scrollable */
-.dropdown-menu {
-    position: relative;
-    width: 100%;
-    max-height: 180px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    margin-top: 4px;
-    padding: 4px;
-    z-index: 10;
-}
-
 /* Each location option gets a compact row */
 .multi-option {
     display: flex;
@@ -487,6 +459,61 @@ button[type="submit"] {
     object-fit: contain;
     filter: brightness(0) invert(1);
 }
+
+
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-row button.toggle {
+    flex-shrink: 0;
+}
+
+
+.search-all-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.search-all-checkbox input {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.search-all-checkbox.hidden {
+    display: none !important;
+}
+
+/* Creates a flex row for the radio options and the dropdown */
+.location-selection-area {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.location-options {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+}
+
+/* Allow the dropdown wrapper to take up remaining space */
+.location-dropdown {
+    flex-grow: 1;
+    font-size: 0.8rem;
+}
+
+
+
 
 
 

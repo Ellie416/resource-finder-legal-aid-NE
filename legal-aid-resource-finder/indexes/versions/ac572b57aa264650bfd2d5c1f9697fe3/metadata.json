@@ -1,0 +1,1236 @@
+[
+  {
+    "client_need": "Food / Meals",
+    "organization": "Food Not Bombs",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Holy Family Church",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Open Door Mission",
+    "services_provided": "Free meals; sack lunches",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "New Visions Homeless Services",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": "Council Bluffs"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Matt Talbot Kitchen & Outreach",
+    "services_provided": "Free meals; food pantry",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Norfolk Rescue Mission",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Norfolk"
+      ],
+      "raw": "Norfolk"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Burrows Center, Salvation Army",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Heart Ministry Center",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed hours; service available monthly"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Heartland Hope Mission",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed hours; service available monthly"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Juan Diego Center",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Kountze Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Market Choice Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Bellevue Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "Sarpy County residents",
+    "location": {
+      "type": "city",
+      "values": [
+        "Bellevue"
+      ],
+      "raw": "Bellevue"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed hours; available monthly"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "NeighborGood Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Papillion"
+      ],
+      "raw": "Papillion"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Food Bank of Lincoln",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "https://www.lincolnfoodbank.org/get-food/food-distribution-schedule/",
+    "contact": "402-466-8170",
+    "how_to_obtain": "Use the food distribution schedule or text 402-466-8170 for service information"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "CareCorps' LifeHouse Food Pantry",
+    "services_provided": "Food pantry / food distribution; food boxes",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Fremont"
+      ],
+      "raw": "Fremont"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed hours; food box available every 30 days"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Women's Center For Advancement (WCA)",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "402-345-7273",
+    "how_to_obtain": "Walk in during listed hours; crisis line available"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Carole's House of Hope",
+    "services_provided": "",
+    "persons_served": "People who are pregnant or parenting",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "402-991-4673",
+    "how_to_obtain": "Call for intake; no walk-ins"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Bright Horizons",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Norfolk"
+      ],
+      "raw": "Norfolk"
+    },
+    "website": "",
+    "contact": "402-379-2026",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Friendship Home",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "",
+    "contact": "402-434-6353; 402-437-9302",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Catholic Charities DV & SA Program",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": ""
+    },
+    "website": "",
+    "contact": "402-554-0520; 402-558-5700",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Safe Haven",
+    "services_provided": "",
+    "persons_served": "Sarpy County residents",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": ""
+    },
+    "website": "",
+    "contact": "402-292-5888",
+    "how_to_obtain": "Call the 24/7 hotline"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Heartland Sanctuary House",
+    "services_provided": "",
+    "persons_served": "Adults age 18+; human trafficking survivors",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": ""
+    },
+    "website": "",
+    "contact": "402-597-1009",
+    "how_to_obtain": "By appointment only; call to arrange service"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Community Alliance",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "",
+    "contact": "402-341-5128",
+    "how_to_obtain": "Walk in on a first-come, first-served basis during listed hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "NAMI Nebraska",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "https://naminebraska.org/",
+    "contact": "800-950-NAMI (6264); Crisis Line: 988",
+    "how_to_obtain": "Call the NAMI HelpLine or use the website's free resources"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "CIRA (Center for Immigration & Refugee Adv.)",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "ciraconnect.org",
+    "contact": "402-898-1349",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Blackford Law",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "blackfordlawllc.com",
+    "contact": "402-933-4090",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Curley Immigration Law",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "www.curleylawoffice.com",
+    "contact": "402-733-8989",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Carlson & Blakeman",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "www.carlsonblakeman.com",
+    "contact": "402-999-9796",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Hatch & Dallon",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "hatchdallon.com",
+    "contact": "402-922-6010",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Koley Jessen",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "www.kolleyjessen.com",
+    "contact": "402-343-3842",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Roth Weinstein",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "www.rothweinstein.com",
+    "contact": "402-800-6690",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Ivan Velasco, Jr., PC LLO",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "ivanvelascojr.com",
+    "contact": "402-932-4826",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Vandenbosch Law",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "gmail.com",
+    "contact": "402-884-4489",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Yamamoto & Kitchens",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Omaha"
+      ],
+      "raw": "Omaha"
+    },
+    "website": "www.yk-law.us",
+    "contact": "402-346-8323",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Monzon, Guerra & Associates",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "www.monzonlaw.com",
+    "contact": "402-477-8188",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Wolzen Law Office",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "wolzenlaw.com",
+    "contact": "402-474-5100",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "University of NE College of Law Legal Clinic",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": "all Nebraska"
+    },
+    "website": "",
+    "contact": "402-472-3271",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Polaris Law Group",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lincoln"
+      ],
+      "raw": "Lincoln"
+    },
+    "website": "https://www.polarislawyers.com/",
+    "contact": "402-606-1441",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Crossroads Mission Avenue",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Kearney"
+      ],
+      "raw": "Kearney"
+    },
+    "website": "",
+    "contact": "308-236-5688",
+    "how_to_obtain": "Attend during meal service hours; contact the location by phone for information"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Crossroads Mission Avenue",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Grand Island"
+      ],
+      "raw": "Grand Island"
+    },
+    "website": "",
+    "contact": "308-675-1973",
+    "how_to_obtain": "Attend during meal service hours; contact the location by phone for information"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Crossroads Mission Avenue",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Hastings"
+      ],
+      "raw": "Hastings"
+    },
+    "website": "",
+    "contact": "402-462-6460",
+    "how_to_obtain": "Attend during meal service hours; contact the location by phone for information"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Crossroads Mission Avenue",
+    "services_provided": "Food pantry / food distribution; food boxes",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Kearney",
+        "Grand Island",
+        "Hastings"
+      ],
+      "raw": "Kearney, Grand Island, and Hastings"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Call in advance"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Food Bank for the Heartland",
+    "services_provided": "Food pantry / food distribution; mobile food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "county",
+      "values": [
+        "Dawson"
+      ],
+      "raw": "Dawson County"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Lexngton Mission Ave. Thrift Store",
+    "services_provided": "Food pantry / food distribution; food boxes",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Lexington"
+      ],
+      "raw": "Lexington"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during business hours for food box services"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Food Bank for the Heartland-Custer County",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "county",
+      "values": [
+        "Custer"
+      ],
+      "raw": "Custer County"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "enCourage Advocacy Center",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Hastings"
+      ],
+      "raw": "Hastings"
+    },
+    "website": "",
+    "contact": "877-322-7272 (24/7 Hotline); 402-463-5810",
+    "how_to_obtain": "Call the hotline or office; emergency shelter available"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "Willow Rising",
+    "services_provided": "",
+    "persons_served": "Residents of Hall, Howard, Hamilton, and Merrick Counties",
+    "location": {
+      "type": "city",
+      "values": [
+        "Grand Island"
+      ],
+      "raw": "Grand Island"
+    },
+    "website": "",
+    "contact": "308-382-8250 (24/7 Crisis Phone); 308-833-0025 (Crisis Text)",
+    "how_to_obtain": "Call the crisis line or use the crisis text line"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "South Central Behavioral Services -Kearney",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Kearney"
+      ],
+      "raw": "Kearney"
+    },
+    "website": "",
+    "contact": "308-532-0587",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "South Central Behavioral Services - Hastings",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Hastings"
+      ],
+      "raw": "Hastings"
+    },
+    "website": "",
+    "contact": "402-463-8684",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Mid-Plains Center",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Kearney"
+      ],
+      "raw": "Kearney"
+    },
+    "website": "",
+    "contact": "308-627-6302",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Lutheran Family Services",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "North Platte"
+      ],
+      "raw": "North Platte"
+    },
+    "website": "",
+    "contact": "308-532-0587",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Lindemeir Law (Chawnta Durham)",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "North Platte"
+      ],
+      "raw": "North Platte"
+    },
+    "website": "www.flatrocklaw.com",
+    "contact": "308-946-7843",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Iligmueller Law",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "South Sioux City"
+      ],
+      "raw": "South Sioux City"
+    },
+    "website": "oligmuellerlaw.com",
+    "contact": "402-494-2199",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Immigration / legal assistance",
+    "organization": "Nebraska Immigration Legal Assistance Hotline (NILAH)",
+    "services_provided": "Immigration legal assistance",
+    "persons_served": "",
+    "location": {
+      "type": "statewide",
+      "values": [],
+      "raw": "Nebraska"
+    },
+    "website": "",
+    "contact": "1-855-307-6730",
+    "how_to_obtain": "Contact organization by phone/email"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Our Lady of Guadalupe Church",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-632-2845",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Lakota Lutheran Center",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-632-3774",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Jeremiah House",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-632-8878",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Vine United Methodist Church",
+    "services_provided": "Free meals; sack lunches",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-635-2069",
+    "how_to_obtain": "Attend during listed meal hours; Curbside pickup available"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Chuck Wagon Church",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-641-8567",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Church of Christ",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-635-1729",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Meals",
+    "organization": "Closer to Home",
+    "services_provided": "Free meals",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Chadron"
+      ],
+      "raw": "Chadron"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Attend during listed meal hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "United Way of Western NE - Scottsbluff",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "",
+    "contact": "308-635-2522",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "United Way of Western NE - Alliance",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Alliance"
+      ],
+      "raw": "Alliance"
+    },
+    "website": "",
+    "contact": "308-763-8031",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Hemingford Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "Hemingford residents",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": ""
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "No appointment necessary; visit during listed hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Break Free Agape Fellowship Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Alliance"
+      ],
+      "raw": "Alliance"
+    },
+    "website": "",
+    "contact": "308-641-6694",
+    "how_to_obtain": "Referral required; contact the pantry for referral information"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Bread Basket",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "unknown",
+      "values": [],
+      "raw": ""
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Crawford Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Crawford"
+      ],
+      "raw": "Crawford"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit during listed hours; limited to 3 times per month"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Shepard's Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "No proof of income required",
+    "location": {
+      "type": "city",
+      "values": [
+        "Chadron"
+      ],
+      "raw": "Chadron"
+    },
+    "website": "",
+    "contact": "432-5408",
+    "how_to_obtain": "By appointment only; call to make an appointment; once per month"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Sidney Table of Grace Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Sidney"
+      ],
+      "raw": "Sidney"
+    },
+    "website": "",
+    "contact": "308-765-0362",
+    "how_to_obtain": "Visit during listed distribution/pantry hours"
+  },
+  {
+    "client_need": "Food / Groceries",
+    "organization": "Kimball Helping Hands Food Pantry",
+    "services_provided": "Food pantry / food distribution",
+    "persons_served": "Nebraska residents meeting federal income guidelines",
+    "location": {
+      "type": "city",
+      "values": [
+        "Kimball"
+      ],
+      "raw": "Kimball"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Visit on the 3rd Saturday of the month during listed hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "DOVES Program - Scottsbluff",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Scottsbluff"
+      ],
+      "raw": "Scottsbluff"
+    },
+    "website": "https://www.dovesprogram.com/contact-us",
+    "contact": "515-599-6620",
+    "how_to_obtain": "Text for information/services"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "DOVES Program - Alliance",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Alliance"
+      ],
+      "raw": "Alliance"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "DOVES Program - Chadron",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Chadron"
+      ],
+      "raw": "Chadron"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Domestic violence / sexual assault / human trafficking support",
+    "organization": "DOVES Program - Sidney",
+    "services_provided": "",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Sidney"
+      ],
+      "raw": "Sidney"
+    },
+    "website": "",
+    "contact": "",
+    "how_to_obtain": "Call or visit during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Human Services Inc.",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Alliance"
+      ],
+      "raw": "Alliance"
+    },
+    "website": "",
+    "contact": "308-762-7177",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Sandhills Center for Hope",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Alliance"
+      ],
+      "raw": "Alliance"
+    },
+    "website": "",
+    "contact": "308-313-5118",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  },
+  {
+    "client_need": "Mental health services",
+    "organization": "Western Community Health Resources",
+    "services_provided": "Mental health / behavioral health services",
+    "persons_served": "",
+    "location": {
+      "type": "city",
+      "values": [
+        "Chadron"
+      ],
+      "raw": "Chadron"
+    },
+    "website": "",
+    "contact": "308-432-8979",
+    "how_to_obtain": "Walk in or call during listed service hours"
+  }
+]

@@ -11,17 +11,60 @@ from sklearn.metrics.pairwise import cosine_similarity
 from location_utils import LocationDatabase
 
 
-METADATA_FILE = Path("metadata.json")
+PROJECT_DIR = Path(__file__).resolve().parent
+INDEX_ROOT = PROJECT_DIR / "indexes"
+ACTIVE_VERSION_FILE = INDEX_ROOT / "active_version.json"
 
-FAISS_FILE = Path("index.faiss")
 
-TFIDF_VECTORIZER_FILE = Path(
-    "tfidf_vectorizer.pkl"
+def get_active_index_dir():
+    """
+    Return the directory containing the currently published
+    search index version.
+    """
+
+    if not ACTIVE_VERSION_FILE.exists():
+        raise FileNotFoundError(
+            "No published search index version was found. "
+            "Run python update_resources.py first."
+        )
+
+    with open(
+        ACTIVE_VERSION_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+        active = json.load(file)
+
+    version = active.get("version")
+
+    if not version or Path(version).name != version:
+        raise ValueError(
+            "The active index version configuration is invalid."
+        )
+
+    index_dir = INDEX_ROOT / "versions" / version
+
+    if not index_dir.is_dir():
+        raise FileNotFoundError(
+            f"The active index directory is missing: {index_dir}"
+        )
+
+    return index_dir
+
+
+# All files used by one SearchEngine instance come from
+# the same published version.
+ACTIVE_INDEX_DIR = get_active_index_dir()
+
+METADATA_FILE = ACTIVE_INDEX_DIR / "metadata.json"
+FAISS_FILE = ACTIVE_INDEX_DIR / "index.faiss"
+TFIDF_VECTORIZER_FILE = (
+    ACTIVE_INDEX_DIR / "tfidf_vectorizer.pkl"
+)
+TFIDF_MATRIX_FILE = (
+    ACTIVE_INDEX_DIR / "tfidf_matrix.pkl"
 )
 
-TFIDF_MATRIX_FILE = Path(
-    "tfidf_matrix.pkl"
-)
 
 MODEL_NAME = "all-MiniLM-L6-v2"
 

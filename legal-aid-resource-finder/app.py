@@ -1,15 +1,23 @@
+from pathlib import Path
+import json
+
 from flask import Flask, render_template, request, jsonify
 from search_engine import SearchEngine
-import json
 
 app = Flask(__name__)
 
-# Load the search engine once when the server starts.
-engine = SearchEngine()
+PROJECT_DIR = Path(__file__).resolve().parent
 
-# Load Nebraska location data once.
-with open("locations.json", "r", encoding="utf-8") as f:
-    locations = json.load(f)
+# Load the currently published search index at startup.
+print("Loading search engine...")
+engine = SearchEngine()
+print("Search engine loaded successfully.")
+
+# Load Nebraska location data.
+LOCATIONS_FILE = PROJECT_DIR / "locations.json"
+
+with open(LOCATIONS_FILE, "r", encoding="utf-8") as file:
+    locations = json.load(file)
 
 
 @app.route("/")

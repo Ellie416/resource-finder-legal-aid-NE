@@ -69,6 +69,25 @@ function setupLocationFilter() {
         toggle.setAttribute("aria-pressed", String(newState));
         toggle.classList.toggle("active", newState);
 
+        const searchAllWrapper = $("searchAllWrapper");
+        const searchAllCheckbox = $("searchAllResources");
+
+        if (newState) {
+            show(options);
+            show(searchAllWrapper);
+        } else {
+            hide(options);
+            hide(searchAllWrapper);
+
+            searchAllCheckbox.checked = false;
+        }
+
+        searchAllCheckbox.addEventListener("change", () => {
+            if (searchAllCheckbox.checked) {
+                $("clientNeed").value = "Everything";
+            }
+        });
+
         if (newState) {
             show(options);
         } else {
@@ -211,7 +230,7 @@ async function performSearch() {
         $("locationToggle").getAttribute("aria-pressed") === "true";
 
     let locationType = null;
-    let locationValue = null;
+    let locationValue = [];
 
     if (filterEnabled) {
         const selectedType = document.querySelector(
