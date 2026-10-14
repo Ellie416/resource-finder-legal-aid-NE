@@ -67,11 +67,11 @@
     "services_provided": "Free meals; food pantry",
     "persons_served": "",
     "location": {
-      "type": "county",
+      "type": "city",
       "values": [
-        "Lancaster"
+        "Lincoln"
       ],
-      "raw": "Lancaster county"
+      "raw": "Lincoln"
     },
     "website": "",
     "contact": "",

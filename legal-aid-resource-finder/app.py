@@ -90,7 +90,7 @@ def search():
     if location_type not in valid_types:
         return jsonify({"error": "Invalid location type."}), 400
 
-    if location_type in {"region", "county", "city"} and not location_value:
+    if location_type in {"region", "county", "city"} and not location_values:
         return jsonify({"error": "Please select a location."}), 400
 
     if location_type in {"region", "county", "city"}:

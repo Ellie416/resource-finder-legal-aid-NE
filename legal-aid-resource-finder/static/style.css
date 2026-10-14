@@ -12,7 +12,6 @@ body {
 .top-bar {
     height: 82px;
     background: #941323;
-    border-top: 4px solid #009fe3;
     display: flex;
     align-items: center;
     padding-left: 28px;
@@ -400,4 +399,94 @@ body {
 .multi-option input {
     margin: 0;
 }
+
+
+/* Keep the location selector within the page layout */
+.location-dropdown {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Keep the list compact and scrollable */
+.dropdown-menu {
+    position: relative;
+    width: 100%;
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-top: 4px;
+    padding: 4px;
+    z-index: 10;
+}
+
+/* Each location option gets a compact row */
+.multi-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.35;
+    cursor: pointer;
+}
+
+/* Keep checkboxes small and prevent them from stretching */
+.multi-option input[type="checkbox"] {
+    flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    margin: 2px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Allow long names to wrap onto a second line */
+.multi-option span,
+.multi-option label {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Make sure the Search button remains in the normal page flow */
+#searchButton,
+button[type="submit"] {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Header bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 4px 24px;
+}
+
+
+.top-bar .logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.top-bar .logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 220px;
+    max-height: 48px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+
 

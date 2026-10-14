@@ -250,9 +250,27 @@ async function performSearch() {
             })
         });
 
-        const data = await response.json();
+        
+        const responseText = await response.text();
 
-        if (!response.ok) throw new Error(data.error || "Search failed.");
+        let data;
+
+        try {
+            data = JSON.parse(responseText);
+        } catch (parseError) {
+            console.error("Expected JSON but received:", responseText);
+            console.error("HTTP status:", response.status);
+
+            throw new Error(
+                `The server returned HTML or invalid JSON (HTTP ${response.status}). ` +
+                "Check the Flask terminal for the underlying error."
+            );
+        }
+
+        if (!response.ok) {
+            throw new Error(data.error || "Search failed.");
+        }
+
 
         sessionStorage.setItem("searchData", JSON.stringify(data));
         window.location.href = "/results";
@@ -512,3 +530,32 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeSearchPage();
     initializeResultsPage();
 });
+
+
+const locationWrapper = document.getElementById("locationDropdownWrapper");
+const locationMenu = document.getElementById("locationDropdown");
+const locationSearch = document.getElementById("locationSearch");
+
+if (locationWrapper && locationMenu) {
+    // Clicking outside the location selector closes the options list.
+    document.addEventListener("click", function (event) {
+        if (!locationWrapper.contains(event.target)) {
+            locationMenu.classList.add("hidden");
+        }
+    });
+
+    // Escape closes the options list.
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            locationMenu.classList.add("hidden");
+        }
+    });
+
+    // Clicking the search field opens the options list again.
+    if (locationSearch) {
+        locationSearch.addEventListener("focus", function () {
+            locationMenu.classList.remove("hidden");
+        });
+    }
+}
+
